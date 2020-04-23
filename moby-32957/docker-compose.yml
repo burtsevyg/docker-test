@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  test:
+    environment:
+      - POSTGRES_PASSWORD=password
+    image: postgres:12
+    networks:
+      - bridge
+    ports:
+    - target: 5432
+      published: 54320
+      protocol: tcp
+      mode: host
+
+networks:
+  bridge:
+    external: true
+    name: bridge
