@@ -9,7 +9,7 @@ services:
       - bridge
     ports:
     - target: 5432
-      published: 54320
+      published: 11111
       protocol: tcp
       mode: host
 
