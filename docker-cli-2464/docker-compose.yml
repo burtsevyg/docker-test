@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  test:
+    image: alpine
+    command: top
+
+networks:
+  ${NETWORK_NAME}:
